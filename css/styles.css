@@ -27,6 +27,7 @@
   color: var(--slate);
   background-color: var(--white);
 }
+
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -40,23 +41,68 @@
   color: var(--navy-blue);
 }
 
-/* Reset */
+/* Reset start */
 .list {
   list-style: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 .link {
   text-decoration: none;
 }
 
+/* Reset end */
+
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  align-items: center;
+
+  outline: 1px solid red;
+  outline-offset: -2px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  color: currentColor;
+  cursor: pointer;
+}
+
 /* Header styles/indexHTML*/
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
 
 .header {
   background-color: var(--white);
 }
 .header-nav {
+  display: flex;
+  align-items: center;
 }
 .header-logo {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  width: 115px;
   font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -65,11 +111,24 @@
   text-transform: uppercase;
   color: var(--iris);
 }
+
 .header-nav-list {
+  display: flex;
+  margin-left: 76px;
 }
 .header-nav-item {
 }
+
+.header-nav-item + .header-nav-item {
+  margin-left: 40px;
+}
+
 .header-nav-link {
+  display: block;
+  /* <added for better HOVERing */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* added for better HOVERing> */
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -84,11 +143,26 @@
   font-style: normal;
 }
 .header-list {
+  display: flex;
+  align-items: center;
 }
+
+.header-list:first-child {
+  margin-left: 332px;
+}
+
 .header-item {
+}
+.header-item + .header-item {
+  margin-left: 40px;
 }
 
 .header-contact {
+  display: block;
+  /* <added for better HOVERing */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* added for better HOVERing> */
   color: var(--slate);
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -101,10 +175,18 @@
 
 .hero {
   background-color: var(--navy-blue);
+}
+
+.hero-section {
   text-align: center;
 }
 
 .hero-title {
+  width: 496px;
+  padding-top: 188px;
+  margin-bottom: 48px;
+  margin-right: auto;
+  margin-left: auto;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
@@ -112,8 +194,15 @@
   color: var(--white);
 }
 .hero-btn {
+  min-width: 169px;
+  min-height: 56px;
+  margin-top: 48px;
+  margin-bottom: 204px;
+  padding: 16px 32px;
   color: var(--white);
   background-color: var(--iris);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
