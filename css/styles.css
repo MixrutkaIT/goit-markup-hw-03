@@ -100,8 +100,6 @@ button {
   align-items: center;
 }
 .header-logo {
-  margin-top: 24px;
-  margin-bottom: 24px;
   width: 115px;
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -174,6 +172,7 @@ button {
 /* Body styles */
 
 .hero {
+  padding: 188px 0px;
   background-color: var(--navy-blue);
 }
 
@@ -183,7 +182,6 @@ button {
 
 .hero-title {
   width: 496px;
-  padding-top: 188px;
   margin-bottom: 48px;
   margin-right: auto;
   margin-left: auto;
@@ -218,13 +216,12 @@ button {
 .main-strenghts-title {
 }
 .strenghts {
+  padding: 120px 0px;
 }
 .strenghts-section {
 }
 .strenghts-list {
   display: flex;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 .strenghts-item {
   width: 264px;
@@ -245,6 +242,7 @@ button {
   color: var(--slate);
 }
 .whatarewedoing {
+  padding: 120px 0px;
 }
 .whatarewedoing-title {
   margin: 0px auto 72px;
@@ -257,7 +255,6 @@ button {
 }
 .whatarewedoing-list {
   display: flex;
-  padding-bottom: 120px;
 }
 .whatarewedoing-item {
 }
@@ -267,14 +264,13 @@ button {
 .whatarewedoing-img {
 }
 .ourteam {
+  padding: 120px 0px;
   background-color: var(--cloud);
 }
 .ourteam-section {
 }
 .ourteam-title {
-  padding-top: 120px;
   margin-bottom: 72px;
-
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -284,7 +280,6 @@ button {
 }
 .ourteam-list {
   display: flex;
-  padding-bottom: 120px;
 }
 .ourteam-item {
   background-color: var(--white);
@@ -317,17 +312,16 @@ button {
   letter-spacing: 0.02em;
   color: var(--slate);
 }
+
 /* Footer styles */
 
 .footer {
+  padding: 100px 0px;
   background-color: var(--navy-blue);
 }
 
 .footer-logo {
   display: block;
-  width: 115px;
-  padding-top: 100px;
-  padding-left: 156px;
   margin-bottom: 16px;
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -342,8 +336,6 @@ button {
 }
 .footer-description {
   width: 264px;
-  padding-left: 156px;
-  padding-bottom: 100px;
   color: var(--cloud);
 }
 
