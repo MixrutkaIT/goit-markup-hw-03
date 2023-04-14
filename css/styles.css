@@ -100,6 +100,7 @@ button {
   align-items: center;
 }
 .header-logo {
+  padding: 24px 0px;
   width: 115px;
   font-family: Raleway, sans-serif;
   font-weight: 800;
@@ -124,8 +125,7 @@ button {
 .header-nav-link {
   display: block;
   /* <added for better HOVERing */
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 24px 0px;
   /* added for better HOVERing> */
   font-weight: 500;
   line-height: 1.5;
@@ -158,8 +158,7 @@ button {
 .header-contact {
   display: block;
   /* <added for better HOVERing */
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 24px 0px;
   /* added for better HOVERing> */
   color: var(--slate);
   line-height: 1.5;
