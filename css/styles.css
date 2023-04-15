@@ -17,6 +17,10 @@
   --white: #ffffff;
   --dairy: #fcfcfc;
 
+  /* Others*/
+  --indent: 24px;
+  --items: 3;
+
   /* Background colors */
   --navy-blue: #2e2f42;
 }
@@ -65,6 +69,19 @@
   outline: 1px solid red;
   outline-offset: -2px;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 h1,
 h2,
@@ -84,7 +101,15 @@ button {
   color: currentColor;
   cursor: pointer;
 }
-
+/* Card Set */
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+.card-set-item {
+  width: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
 /* Header styles/indexHTML*/
 
 .main-nav {
@@ -93,6 +118,7 @@ button {
 }
 
 .header {
+  border-bottom: 1px solid #e7e9fc;
   background-color: var(--white);
 }
 .header-nav {
@@ -167,6 +193,11 @@ button {
 .header-contact:hover,
 .header-contact:focus {
   color: var(--ocean);
+}
+
+/* Portfolio styles*/
+.img-list {
+  --items: 3;
 }
 /* Body styles */
 
@@ -293,6 +324,7 @@ button {
   width: 264px;
   text-align: center;
   padding-top: 32px;
+  padding-bottom: 32px;
   outline: 1px solid darkgreen;
   outline-offset: -2px;
 }
@@ -305,7 +337,6 @@ button {
   color: var(--navy-blue);
 }
 .team-positiom {
-  padding-bottom: 32px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -345,6 +376,18 @@ button {
   color: var(--slate);
   background-color: var(--white);
 }
+.btn-img {
+  padding-top: 96px;
+  padding-bottom: 72px;
+}
+.btn-img-section {
+  display: flex;
+}
+.btn-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
+}
 .btn-item {
   font-family: Roboto, sans-serif;
   font-weight: 500;
@@ -360,7 +403,28 @@ button {
   color: var(--white);
   background-color: var(--ocean);
 }
+.btn-list-item {
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+}
+.btn-list-item + .btn-list-item {
+  margin-left: 24px;
+}
 .img-img {
+}
+.img-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 120px;
+}
+.img-item {
+  width: 360px;
+
+  background-color: tomato;
+}
+.img-card {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .img-title {
   font-weight: 500;
