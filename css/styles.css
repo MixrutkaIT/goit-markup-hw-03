@@ -246,10 +246,12 @@ button {
 .strenghts-item {
   width: 264px;
 }
-.strenghts-item + .strenghts-item {
-  margin-left: 24px;
+.strenghts-item:not(:last-child) {
+  margin-right: 24px;
 }
+
 .strenghts-title {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -276,8 +278,8 @@ button {
 .whatarewedoing-list {
   display: flex;
 }
-.whatarewedoing-item + .whatarewedoing-item {
-  margin-left: 24px;
+.whatarewedoing-item:not(:last-child) {
+  margin-right: 24px;
 }
 .ourteam {
   padding: 120px 0px;
@@ -301,9 +303,10 @@ button {
   border-radius: 0px 0px 4px 4px;
   background-color: var(--white);
 }
-.ourteam-item + .ourteam-item {
-  margin-left: 24px;
+.ourteam-item:not(:last-child) {
+  margin-right: 24px;
 }
+
 .ourteam-img {
   width: 264px;
 }
@@ -317,6 +320,7 @@ button {
 }
 
 .team-title {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
