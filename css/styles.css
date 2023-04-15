@@ -215,10 +215,10 @@ button {
   color: var(--white);
 }
 .hero-btn {
+  display: block;
+  margin: 48px auto 204px;
   min-width: 169px;
   height: 56px;
-  margin-top: 48px;
-  margin-bottom: 204px;
   padding: 16px 32px;
   color: var(--white);
   background-color: var(--iris);
