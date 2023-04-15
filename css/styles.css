@@ -141,9 +141,6 @@ button {
 .header-nav-list {
   display: flex;
 }
-.header-nav-item + .header-nav-item {
-  margin-left: 40px;
-}
 .header-nav-link {
   display: block;
   /* <added for better HOVERing */
@@ -165,16 +162,11 @@ button {
 .header-list {
   display: flex;
   align-items: center;
+  column-gap: 40px;
 }
-
 .header-list:first-child {
   margin-left: 332px;
 }
-
-.header-item + .header-item {
-  margin-left: 40px;
-}
-
 .header-contact {
   display: block;
   /* <added for better HOVERing */
