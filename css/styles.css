@@ -381,7 +381,6 @@ button {
   padding-bottom: 72px;
 }
 .btn-img-section {
-  display: flex;
 }
 .btn-list {
   display: flex;
@@ -415,7 +414,6 @@ button {
 .img-list {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 120px;
 }
 .img-item {
   width: 360px;
