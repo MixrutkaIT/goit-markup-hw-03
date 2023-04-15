@@ -126,6 +126,7 @@ button {
   align-items: center;
 }
 .header-logo {
+  margin-right: 76px;
   padding: 24px 0px;
   width: 115px;
   font-family: Raleway, sans-serif;
@@ -139,7 +140,6 @@ button {
 
 .header-nav-list {
   display: flex;
-  margin-left: 76px;
 }
 .header-nav-item + .header-nav-item {
   margin-left: 40px;
@@ -363,9 +363,9 @@ button {
   color: var(--slate);
   background-color: var(--white);
 }
-.btn-img {
+.portfolio {
   padding-top: 96px;
-  padding-bottom: 72px;
+  padding-bottom: 120px;
 }
 .btn-list {
   display: flex;
@@ -373,6 +373,7 @@ button {
   margin-bottom: 72px;
 }
 .btn-item {
+  padding: 12px 24px;
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -381,6 +382,9 @@ button {
   color: var(--iris);
   background-color: var(--cloud);
   cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 .btn-item:focus,
 .btn-item:hover {
@@ -397,19 +401,21 @@ button {
 .img-list {
   display: flex;
   flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
 }
 .img-item {
   width: 360px;
 }
 .img-card {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 16px;
   padding-left: 16px;
   border-right: 1px solid #e7e9fc;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
 }
 .img-title {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
