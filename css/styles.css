@@ -16,6 +16,7 @@
   --grey: #2e2f42;
   --white: #ffffff;
   --dairy: #fcfcfc;
+  --btncolor: #e7e9fc;
 
   /* Others*/
   --indent: 24px;
@@ -388,10 +389,12 @@ button {
   cursor: pointer;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: 1px solid var(--btncolor);
   border-radius: 4px;
 }
 .btn-item:focus,
 .btn-item:hover {
+  border: 1px solid transparent;
   color: var(--white);
   background-color: var(--ocean);
 }
@@ -399,8 +402,8 @@ button {
   border: 1px solid #e7e9fc;
   border-radius: 4px;
 }
-.btn-list-item + .btn-list-item {
-  margin-left: 24px;
+.btn-list-item:not(:last-child) {
+  margin-right: 24px;
 }
 .img-list {
   display: flex;
