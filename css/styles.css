@@ -140,6 +140,7 @@ button {
 
 .header-nav-list {
   display: flex;
+  column-gap: 40px;
 }
 .header-nav-link {
   display: block;
@@ -197,7 +198,7 @@ button {
 }
 
 .hero-title {
-  width: 496px;
+  max-width: 496px;
   margin-bottom: 48px;
   margin-right: auto;
   margin-left: auto;
@@ -209,7 +210,7 @@ button {
 }
 .hero-btn {
   min-width: 169px;
-  min-height: 56px;
+  height: 56px;
   margin-top: 48px;
   margin-bottom: 204px;
   padding: 16px 32px;
@@ -224,6 +225,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  border: none;
 }
 .hero-btn:hover,
 .hero-btn:focus {
