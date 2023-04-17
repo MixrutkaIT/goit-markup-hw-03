@@ -129,7 +129,6 @@ button {
 .header-logo {
   margin-right: 76px;
   padding: 24px 0px;
-  width: 115px;
   font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -164,6 +163,7 @@ button {
 }
 .add {
   font-style: normal;
+  margin-left: auto;
 }
 .header-list {
   display: flex;
@@ -171,9 +171,6 @@ button {
 }
 .header-item:not(:last-child) {
   margin-right: 40px;
-}
-.header-list:first-child {
-  margin-left: 332px;
 }
 .header-contact {
   display: block;
@@ -217,7 +214,7 @@ button {
 }
 .hero-btn {
   display: block;
-  margin: 48px auto 204px;
+  margin: auto;
   min-width: 169px;
   height: 56px;
   padding: 16px 32px;
@@ -265,7 +262,7 @@ button {
   color: var(--slate);
 }
 .whatarewedoing {
-  padding: 120px 0px;
+  padding-bottom: 120px;
 }
 .whatarewedoing-title {
   margin: 0px auto 72px;
@@ -316,8 +313,6 @@ button {
   text-align: center;
   padding: 32px 16px;
   border-radius: 0px 0px 4px 4px;
-  outline: 1px solid darkgreen;
-  outline-offset: -2px;
 }
 
 .team-title {
@@ -359,6 +354,9 @@ button {
 .footer-description {
   width: 264px;
   color: var(--cloud);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 /* Portfolio */
@@ -387,8 +385,6 @@ button {
   color: var(--iris);
   background-color: var(--cloud);
   cursor: pointer;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
   border: 1px solid var(--btncolor);
   border-radius: 4px;
 }
@@ -399,7 +395,6 @@ button {
   background-color: var(--ocean);
 }
 .btn-list-item {
-  border: 1px solid #e7e9fc;
   border-radius: 4px;
 }
 .btn-list-item:not(:last-child) {
